@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for experts in object_list %}
+        {{ experts.name }}
+        {{ experts.fname }}
+        {{ experts.oname }}
+    {% endfor%}
+{% endblock content %}

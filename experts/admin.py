@@ -8,7 +8,7 @@ from .models import Type, Sphere, Sex, Structure, Experts, Organization, Country
 @admin.register(Experts)
 class ExpertsAdmin(admin.ModelAdmin):
     list_display = ("id", "fname", "name", "type", "sphere", "country", "get_image")
-    list_display_links = ("fname", "name", "type")
+    list_display_links = ("fname", "name", "type", "get_image")
     list_filter = ("type", "sphere", "sex")
 
     def get_image(self, obj):
